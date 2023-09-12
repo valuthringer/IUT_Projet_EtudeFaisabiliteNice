@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SAE S1.05 et SAE 1.06</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Bandeau en haut -->
+  <div class="bandeau_haut">
+    <div class="texte_bandeau_haut">Site créé dans le cadre du projet de SAE Etude de faisabilité à L'IUT de Nice Côte
+      d'Azur
+    </div>
+  </div>
+  <!-- FIN Bandeau en haut -->
+  <!-- Menu horizontal -->
+  <div class="bandeau_menu">
+    <nav class="menu">
+      <ul class="l-menu">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+          <div class="main_pages">
+      <a href="../index.html"><img src="../img/logo-iut-blanc-V2.png" class="logo_iut_menu"></a>
+      <a href="../index.html" class="pages">Accueil</a>
+      <a href="./presentation.html" class="pages">Présentation du projet</a>
+      <a href="./questionnaire.html" class="pages">Sondage</a>
+      <a href="./contact.html" class="pages" style="background-color: rgb(00,40,70,0.5); border-bottom: 2px solid white;">Contact</a>
+    </ul>
+  </nav>
+  </div>
+  <!-- FIN Menu horizontal -->
+  <!-- Ecran Accueil -->
+  <header id="header_2">
+  <div class="home_screen">
+    <p>Nous contacter</p>
+  </div>
+  </header>
+  <!-- FIN Ecran Accueil -->
+<div class="mainbkg">
+  <main>
+    <!-- BLOC FORMULAIRE DE CONTACT -->
+      <p class="p_contact">Vous avez une question ou une suggestion à nous partager ? N'hésitez pas à nous contacter via ce formulaire</p>
+    <div class="bloc_contact">
+      <div class="infos_perso">
+        <div class="marges_contact">
+        <div class="center_m">
+        <div>
+          <label class="label_contact" for="contact_nom">Nom : </label>
+          <input class="input_contact" type="text" name="input_c" value="" placeholder="Dupond" id="contact_nom">
+        </div>
+        <div>
+          <label class="label_contact" for="contact_prenom">Prénom : </label>
+          <input class="input_contact" type="text" name="input_c" value="" placeholder="Martin" id="contact_prenom">
+        </div>
+        <div>
+          <label class="label_contact" for="contact_mail">Email : </label>
+          <input class="input_contact" type="mail" name="input_c" value="" placeholder="martindupond@mymail.fr" id="contact_mail">
+        </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="message_contact">
+        <div class="marges_contact">
+        <div class="center_m">
+        <div>
+          <label class="label_contact" for="contact_objet">Objet : </label>
+          <input class="input_contact" type="text" name="input_c" value="" placeholder="" id="contact_objet">
+        </div>
+        <div>
+          <label class="label_contact" for="contact_msg">Message : </label>
+          <input class="input_contact" type="text" name="input_c" value="" placeholder="Ecrivez votre message..." id="contact_msg">
+        </div>
+        <p>Souhaitez-vous une copie de ce message par mail ?</p>
+        <div>
+          <input class="input_contact" type="radio" name="input_c" value="Oui" id="contact_copie">
+          <label class="label_contact" for="contact_copie">Oui </label>
+        </div>
+        <div>
+          <input class="input_contact" type="radio" name="input_c" value="Oui" id="contact_copienon">
+          <label class="label_contact" for="contact_copienon">Non </label>
+          </div>
+      </div>
+      </div>
+      </div>
+      <div>
+        <input class="input_contact" type="button" name="input_c" value="Envoyer le message" id="contact_envoyer">
+      </div>
+    </div>
+  </main>
+</div>
+<!-- FIN FORMULAIR CONTACT -->
+</body>
+
+<footer>
+  <div class="bandeau_bas">
+    <div class="texte_bandeau_bas">Un projet de Louis Rainero, Valentin Luthringer, Matthieu Griffonnet, Tom Da Costa,
+      Anicé Khéniche et Luca Panossian-Zorab</div>
+    <img src="../img/uca_blanc.png" class="logo_bas_de_page">
+</footer>
+
+</html>

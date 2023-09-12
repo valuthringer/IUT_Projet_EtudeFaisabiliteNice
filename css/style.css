@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*IMPORT DES POLICES GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+/* Ajustement des marges et tailles */
+body,html,h1{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+header{ /* Fond d'écran avec texte au milieu - PAGE ACCUEIL */
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: url("../img/nice_2.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+}
+.home_screen{ /* Div dans le header; pour ajouter les marges et le centrage */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  color: white;
+  align-items:center;
+  display: flex;
+  justify-content: center;
+}
+.home_screen p{
+  text-align: center;
+  margin-top: -20px;
+  line-height: 0.9;
+  text-shadow: 1px 1px 10px black;
+  font-weight: bold;
+  padding: 17px 60px;
+  font-size: 40px;
+  font-style: normal;
+}
+#header_2{ /* Fond avec texte centré - HAUT DE PAGE (toutes pages sauf accueil) */
+  width: 100%;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.bandeau_haut{ /* Couleur de fond du bandeau en haut (description projet) */
+  background-color: #262626;
+  width: 100%;
+  position: relative;
+  z-index: 8500;  /* Position supérieure */
+}
+.texte_bandeau_haut{
+  margin-top: 0px;
+  color: white;
+  text-align: center;      /* Paramètres du texte du bandeau en haut */
+  font-size: 17px;
+  margin-bottom: 0px;
+  padding: 08px 0px;
+}
+.bandeau_bas{ /* Couleur de fond du bandeau en bas */
+  background-color: #262626;
+}
+.texte_bandeau_bas{ /* Paramètres texte bandeau en bas de la page */
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding: 08px 0px;
+}
+.logo_bas_de_page{
+  height: 50px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+/* Menu site web*/
+.bandeau_menu{
+  position: sticky;  /* Permet de garder le menu épinglé au scroll */
+  top: 0;
+  z-index: 8000;
+}
+/* paramètres généraux du menu */
+nav{
+  width: 100%;
+  background-color: rgb(4,138,205,0.89);
+  margin-top: 0px;
+  float: left;
+}
+.l-menu{
+  text-align: center;
+}
+.l-menu a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  padding: 17px 20px;
+} /* Changement de couleur au survol */
+.l-menu a:hover{
+  color: white;
+  border-bottom: 2px solid white;
+  background-color: #004070;
+  transition: color 0.3s, background-color 0.3s;
+}
+.logo_iut_menu{
+  height: 45px;
+  width: 38px;
+  margin-bottom: -10px;
+  margin-top: -15px;
+}
+/* FIN Menu */
+
+/* Menu telephone */
+/* Site Responsive */
+nav label, #toggle
+{
+    display: none;
+}
+@media all and (max-width: 800px) /* Paramètres appliqués jusqu'à 800px de large */
+{
+    nav
+    {
+      height: 80px;
+    }
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(4,138,205,0.89);
+        height: 100%;
+        margin-left: -40px;
+    }
+    nav .main_pages a {
+        width: 100%;
+    }
+    nav label 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+/* FIN Menu telephone */
+
+/* Marges de la page ajustées */
+main{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+main p{
+  color: black;
+}
+main h2{
+  text-align: center;
+  text-decoration: underline;
+}
+.espace_bas_site{ /*Div ajouté en bas du site afin de laisser un petit espace blanc */
+  padding-bottom:90px;
+}
+/* Intégration de la carte IGN réalisée pour le projet */
+#iframe_carte{
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+} /* Paramètres à appliquer au survol de la carte IGN */
+#iframe_carte:hover{
+  box-shadow: 1px 1px 1400px 2px rgba(7, 145, 214, 0.452);
+  transition: box-shadow 5s;
+  cursor: pointer;
+}
+#iframe_carte:not(:hover){
+  transition: box-shadow 6s;
+}
+
+/* Paramètres généraux du formulaire */
+.bloc_formulaire{
+  margin-bottom: 90px; /* Marges du premier bloc d'arrière plan */ 
+  padding-bottom: 40px;
+}
+.label_form{
+  color: black;
+  display: inline;
+}
+.bloc_formulaire, .bloc_contact{
+  background-color: rgba(7, 145, 214, 0.452);
+  color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(4, 110, 163, 0.452);   /* Ombre arrière plan du bloc formulaire */
+}
+.sous_bloc_formulaire, .infos_perso, .message_contact{
+  background-color: rgb(8, 105, 153);
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.sous_bloc_formulaire:hover{  /* Appliqués lors du survol de chaque question du formulaire */
+  background: rgb(4, 63, 92);
+  margin-right: 25px;
+  margin-left: 25px;
+  transition: margin 0.2s, background-color 1.2s, box-shadow 0.2s;
+  box-shadow: 1px 1px 20px 7px rgba(255, 255, 255, 0.493);
+}
+.sous_bloc_formulaire:not(:hover){
+  transition: margin 0.2s, background-color 0.8s, box-shadow 0.2s;
+}
+.sous_bloc_formulaire p, .infos_contact p, .message_contact p{  /* Paramètres texte (page formulaire + page contact)  */
+  color: white;
+  margin-left: 10px;
+  font-size: 19px;;
+}
+.sous_bloc_formulaire label{
+  color: white;
+}
+.sous_cat_bloc_formulaire{
+  background-color: rgb(4, 50, 73);
+  margin-left: 70px;
+  margin-right: 70px;
+  color: white;
+  border-radius: 10px;
+}
+.sous_cat_bloc_formulaire:hover{
+  background-color: rgb(8, 102, 149);
+  margin-left: 75px;
+  margin-right: 75px;
+  box-shadow: 1px 1px 20px 7px rgba(255, 255, 255, 0.493);
+  transition: margin 0.2s, background-color 1.2s, box-shadow 0.2s;
+}
+.sous_cat_bloc_formulaire:not(:hover){
+  transition: margin 0.2s, background-color 0.8s, box-shadow 0.2s;
+}
+.sous_cat_bloc_formulaire p{
+  color: white;
+  margin-left: 10px;
+}
+.sous_cat_bloc_formulaire label{
+  color: white;
+}
+#range1{
+  width: 50%;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+form .reponses{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -10px;
+  border-radius: 5px;
+  padding: 6px 8px;
+  font-style: italic;
+}
+form h3{
+  margin-left: 20px;
+  font-size: 24px;
+  color: black;
+}
+#envoyer_form, #contact_envoyer{ /* Boutons d'envoi (page formulaire + page contact) */
+  margin: auto;
+  display: block;
+  color: white;
+  background-color: rgb(4, 59, 88);
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+#envoyer_form{
+  margin-top: 40px;
+}
+#envoyer_form:active, #contact_envoyer:active{
+  background-color: rgb(4, 37, 54);
+}
+form input[type="text"]{
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.81);
+}
+/*********** AFFICHE LES QUESTIONS SI COCHÉ : OUI ************/
+.sioui1{
+  display: none;
+}
+#ouinon1 #q4r1:checked~.sioui1{
+  display: inline;
+}
+.sioui2{
+  display: none;
+}
+#q15r1:checked~.sioui2{
+  display: inline;
+}
+/* FIN paramètres formulaire */
+
+/* Paramètres bloc contact */
+.marges_contact{
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.bloc_contact label{
+  margin-top: 20px;
+}
+.bloc_contact p{
+  font-size: 15px;;
+}
+#contact_msg{
+  width: 100%;
+  height: 90px;
+  margin-bottom: 20px;
+}
+#contact_objet{
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+#contact_nom{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#contact_prenom{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#contact_mail{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bloc_contact{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.infos_perso:hover, .message_contact:hover{
+  background: rgb(4, 63, 92);
+  transition: background-color 1.2s, box-shadow 0.2s;
+  box-shadow: 1px 1px 20px 7px rgba(255, 255, 255, 0.493);
+}
+.infos_perso:not(:hover), .message_contact:not(:hover){
+  transition: background-color 0.8s, box-shadow 0.2s;
+}
+.p_contact{
+  text-align:center;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+#contact_envoyer{
+  margin-top: 30px;
+}
+.message_contact{
+  margin-top: 20px;
+}
+#tps{
+  padding-bottom: 30px;
+}
+
+/* LEGENDE DE LA CARTE */
+#legende_tramway{
+  background-color: #FFC000;
+  padding: 3px; /* taille bloc couleur légence */
+  width: 20px;
+  float: left; /* Aligner bloc légende et texte */
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #FFC000; 
+  border-radius: 50% 20% / 10% 40%; /* Style de bordure moderne */
+}
+#legende_tramsout{
+  background-image: url("../img/legende_lignejaune.png");
+  background-position: center; /**/    
+  background-size: contain;   /*  CENTRER AU MILIEU DU CADRE SANS REPETER L'IMAGE */
+  background-repeat: no-repeat; /**/
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #FFC000;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_routeuniqu{
+  background-color: #FB43DC;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #FB43DC;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_cycldejadouble{
+  background-color: #4545F9;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #4545F9;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_cycldoubleprevoir{
+  background-color: #9CC2E5;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #9CC2E5;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_cycldoubleprevoir{
+  background-color: #9CC2E5;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #9CC2E5;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_cycluniqueprevoir{
+  background-image: url("../img/legende_lignebleuclair.png"); /* Image appliquée au bloc en tant qu'arrière-plan */
+  background-position: center;
+  background-size: contain;    /* Paramètres arrière-plan (centrer, ne pas répéter l'image) */
+  background-repeat: no-repeat;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #9CC2E5;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_cycldejaunique{
+  background-image: url("../img/legende_lignebleu.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #4545F9;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_pietdeja{
+  background-color: #70AD47;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #70AD47;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_pietnouv{
+  background-color: #C5E0B3;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #C5E0B3;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_partage{
+  background-color: #7030A0;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #7030A0;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_zonerouge{
+  background-color: #FF0000;
+  padding: 3px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #FF0000;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_feuxnouv{
+  background-image: url("../img/legende_feubleu.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8px;
+  padding-right: 0px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #0101FE;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_feuxdeja{
+  background-image: url("../img/legende_feuvert.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8px;
+  padding-right: 0px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #00FF00;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_vbdeja{
+  background-image: url("../img/legende_vbbleu.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8px;
+  padding-right: 0px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #0101FE;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_vbnouv{
+  background-image: url("../img/legende_vbbleucyan.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8px;
+  padding-right: 0px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px #00FFFF;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_repardeja{
+  background-image: url("../img/legende_reparorange.png");
+  background-position: center;
+  background-size: contain;  
+  background-repeat: no-repeat;
+  padding: 8px;
+  padding-right: 0px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px orange;
+  border-radius: 50% 20% / 10% 40%;
+}
+#legende_reparnouv{
+  background-image: url("../img/legende_reparjaune.png");
+  background-position: center;
+  background-size: contain;  
+  background-repeat: no-repeat;
+  padding: 8px;
+  padding-right: 0px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 1px yellow;
+  border-radius: 50% 20% / 10% 40%;
+}
+/* Paramètres p légende aligné au bloc couleur */
+.legende_carte p{
+  float: inline-end;
+  padding-top: 0px;
+  margin-top: -4px;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(65, 64, 64);
+}
+.legende_carte{
+  margin-bottom: 50px;
+}
+/* FIN LEGENDE CARTE */
+
+/* Affiche le reste de la carte si appuyé */
+.aff_suite_legende{
+  display: none;
+}
+#suite_leg{
+  display:none;
+}
+.suite_legende label{
+  background-color: rgb(1, 64, 133);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 05px;
+  border-radius: 10px;
+}
+.suite_legende label:hover{
+  background-color: black;
+  transition: background-color 0.1s;
+  cursor: pointer;
+}
+.suite_legende label:not(:hover){
+  transition: background-color 0.1s;
+}
+.suite_legende label:active{
+  background-color: rgb(1, 64, 133);
+  font-size: 15px;
+  margin-left: 8px;
+  transition: font-size 0.1s, margin-left 0.1s;
+}
+.suite_legende #suite_leg:checked~.aff_suite_legende{
+  display: inline;
+}
+/* FIN */
+
+
+/* FIN DU CODE CSS */

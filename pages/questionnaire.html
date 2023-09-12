@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SAE S1.05 et SAE 1.06</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Bandeau en haut -->
+  <div class="bandeau_haut">
+    <div class="texte_bandeau_haut">Site créé dans le cadre du projet de SAE Etude de faisabilité à L'IUT de Nice Côte
+      d'Azur
+    </div>
+  </div>
+  <!-- FIN Bandeau en haut -->
+  <!-- Menu horizontal -->
+  <div class="bandeau_menu">
+    <nav class="menu">
+      <ul class="l-menu">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+          <div class="main_pages">
+      <a href="../index.html"><img src="../img/logo-iut-blanc-V2.png" class="logo_iut_menu"></a>
+      <a href="../index.html" class="pages">Accueil</a>
+      <a href="./presentation.html" class="pages">Présentation du projet</a>
+      <a href="./questionnaire.html" class="pages" style="background-color: rgb(00,40,70,0.5); border-bottom: 2px solid white;">Sondage</a>
+      <a href="./contact.html" class="pages">Contact</a>
+    </ul>
+  </nav>
+  </div>
+  <!-- FIN Menu horizontal -->
+  <!-- Ecran Accueil -->
+  <header id="header_2">
+  <div class="home_screen">
+    <p>Le sondage</p>
+  </div>
+  </header>
+  <!-- FIN Ecran Accueil -->
+<div class="mainbkg">
+  <main>
+    <h2>> Le sondage</h2>
+    <p>Afin d'évaluer la quantité de trajets substituables pour notre projet, nous vous mettons à disposition un questionnaire à remplir.</p>
+    <p id="tps"><strong>🕝Temps de remplissage estimé : 5 minutes</strong></p>
+
+    <!--FORMULAIRE-->
+    <form>
+      <div class="bloc_formulaire">
+        <h3>1. Informations générales sur l'établissement</h3>
+
+        <div class="sous_bloc_formulaire">
+          <p>Dans quel secteur travaille votre établissement ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q1r1" name="q1" value="q1r1">
+            <label class="label_form" for="q1r1">Primaire</label>
+          </div>
+          <div>
+            <input type="radio" id="q1r2" name="q1" value="q1r2">
+            <label class="label_form" for="q1r2">Secondaire</label>
+          </div>
+          <div>
+            <input type="radio" id="q1r3" name="q1" value="q1r3">
+            <label class="label_form" for="q1r3">Tertiaire</label>
+          </div>
+          
+        </div>
+        </div>
+        <!-- SOUS BLOC DE REPONSES -->
+        <div class="sous_bloc_formulaire">
+          <p>Dans quel quartier de Nice votre établissement se situe-t-il ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q2r1" name="q2" value="q2r1">
+            <label class="label_form" for="q2r1">Nice Ouest</label>
+          </div>
+          <div>
+            <input type="radio" id="q2r2" name="q2" value="q2r2">
+            <label class="label_form" for="q2r2">Collines Niçoises</label>
+          </div>
+          <div>
+            <input type="radio" id="q2r3" name="q2" value="q2r3">
+            <label class="label_form" for="q2r3">Coeur de Nice</label>
+          </div>
+          <div>
+            <input type="radio" id="q2r4" name="q2" value="q2r4">
+            <label class="label_form" for="q2r4">Hauts de Nice</label>
+          </div>
+          <div>
+            <input type="radio" id="q2r5" name="q2" value="q2r5">
+            <label class="label_form" for="q2r5">Rives du Paillon</label>
+          </div>
+          <div>
+            <input type="radio" id="q2r6" name="q2" value="q2r6">
+            <label class="label_form" for="q2r6">Nice Historique</label>
+          </div>
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Combien de personnes travaillent dans votre établissement ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q3r1" name="q3" value="q3r1">
+            <label class="label_form" for="q3r1">1 à 9</label>
+          </div>
+          <div>
+            <input type="radio" id="q3r2" name="q3" value="q3r2">
+            <label class="label_form" for="q3r2">10 à 50</label>
+          </div>
+          <div>
+            <input type="radio" id="q3r3" name="q3" value="q3r3">
+            <label class="label_form" for="q3r3">50 à 250</label>
+          </div>
+          <div>
+            <input type="radio" id="q3r4" name="q3" value="q3r4">
+            <label class="label_form" for="q3r4">Plus de 250</label>
+          </div>
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire" id="ouinon1">
+          <p>Avez-vous des salariés en télétravail ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q4r2" class="q4r1" name="q4" value="q4r2">
+            <label class="label_form" for="q4r2">Non</label>
+          </div>
+          <div> <!-- APPARAIT SI OUI EST COCHÉ -->
+            <input type="radio" id="q4r1" name="q4" value="q4r1" class="oui1">
+            <label class="label_form" for="q4r1">Oui</label>
+
+                <div class="sioui1">
+                  <div class="sous_cat_bloc_formulaire" id="sous_cat_q5">
+                    <p>Si oui, quelle est la part du personnel travaillant en télétravail (sur un jour moyen) ?</p>
+                    <div class="reponses">
+                    <div>
+                      <input type="radio" id="q5r1" name="q5" value="q5r1">
+                      <label class="label_form" for="q5r1">0 à 24%</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="q5r2" name="q5" value="q5r2">
+                      <label class="label_form" for="q5r2">25 à 49%</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="q5r3" name="q5" value="q5r3">
+                      <label class="label_form" for="q5r3">50 à 74%</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="q5r4" name="q5" value="q5r4">
+                      <label class="label_form" for="q5r4">75 à 100%</label>
+                    </div>
+                    </div>
+                  </div>
+          </div>
+          </div>
+        </div>
+        </div>
+
+        <h3>2. Trajet domicile/lieu de travail</h3>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle part de votre personnel se rend-elle au travail en voiture ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q6r1" name="q6" value="q6r1">
+            <label class="label_form" for="q6r1">0 à 24%</label>
+          </div>
+          <div>
+            <input type="radio" id="q6r2" name="q6" value="q6r2">
+            <label class="label_form" for="q6r2">25 à 49%</label>
+          </div>
+          <div>
+            <input type="radio" id="q6r3" name="q6" value="q6r3">
+            <label class="label_form" for="q6r3">50 à 74%</label>
+          </div>
+          <div>
+            <input type="radio" id="q6r4" name="q6" value="q6r4">
+            <label class="label_form" for="q6r4">75 à 100%</label>
+          </div>          
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est, environ, la distance moyenne des trajets en voiture ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q7r1" name="q7" value="q7r1">
+            <label class="label_form" for="q7r1">0 à 2 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q7r2" name="q7" value="q7r2">
+            <label class="label_form" for="q7r2">3 à 5 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q7r3" name="q7" value="q7r3">
+            <label class="label_form" for="q7r3">6 à 10 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q7r4" name="q7" value="q7r4">
+            <label class="label_form" for="q7r4">Plus</label>
+          </div>          
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est la durée moyenne d'un trajet en voiture ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q8r1" name="q8" value="q8r1">
+            <label class="label_form" for="q8r1">0 à 4 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q8r2" name="q8" value="q8r2">
+            <label class="label_form" for="q8r2">5 à 20 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q8r3" name="q8" value="q8r3">
+            <label class="label_form" for="q8r3">21 à 44 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q8r4" name="q8" value="q8r4">
+            <label class="label_form" for="q8r4">45 minutes à 1 heure</label>
+          </div>  
+          <div>
+            <input type="radio" id="q8r5" name="q8" value="q8r5">
+            <label class="label_form" for="q8r5">Plus d'une heure</label>
+          </div>         
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est la part des trajets en vélo, trotinette et à pieds du personnel se rendant au travail ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q9r1" name="q9" value="q9r1">
+            <label class="label_form" for="q9r1">0 à 24%</label>
+          </div>
+          <div>
+            <input type="radio" id="q9r2" name="q9" value="q9r2">
+            <label class="label_form" for="q9r2">25 à 49%</label>
+          </div>
+          <div>
+            <input type="radio" id="q9r3" name="q9" value="q9r3">
+            <label class="label_form" for="q9r3">50 à 74%</label>
+          </div>
+          <div>
+            <input type="radio" id="q9r4" name="q9" value="q9r4">
+            <label class="label_form" for="q9r4">75 à 100%</label>
+          </div>       
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est, environ, la distance moyenne des trajets en vélo, trotinette ou à pieds ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q10r1" name="q10" value="q10r1">
+            <label class="label_form" for="q10r1">0 à 2 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q10r2" name="q10" value="q10r2">
+            <label class="label_form" for="q10r2">3 à 5 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q10r3" name="q10" value="q10r3">
+            <label class="label_form" for="q10r3">6 à 10 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q10r4" name="q10" value="q10r4">
+            <label class="label_form" for="q10r4">Plus de 10 km</label>
+          </div>          
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est la durée moyenne d'un trajet en vélo, trotinette ou à pieds ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q11r1" name="q11" value="q11r1">
+            <label class="label_form" for="q11r1">0 à 4 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q11r2" name="q11" value="q11r2">
+            <label class="label_form" for="q11r2">5 à 20 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q11r3" name="q11" value="q11r3">
+            <label class="label_form" for="q11r3">21 à 44 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q11r4" name="q11" value="q11r4">
+            <label class="label_form" for="q11r4">45 minutes à 1 heure</label>
+          </div>  
+          <div>
+            <input type="radio" id="q11r5" name="q11" value="q11r5">
+            <label class="label_form" for="q11r5">Plus d'une heure</label>
+          </div>         
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est la part des trajets transports en commun du personnel se rendant au travail ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q12r1" name="q12" value="q12r1">
+            <label class="label_form" for="q12r1">0 à 24%</label>
+          </div>
+          <div>
+            <input type="radio" id="q12r2" name="q12" value="q12r2">
+            <label class="label_form" for="q12r2">25 à 49%</label>
+          </div>
+          <div>
+            <input type="radio" id="q12r3" name="q12" value="q12r3">
+            <label class="label_form" for="q12r3">50 à 74%</label>
+          </div>
+          <div>
+            <input type="radio" id="q12r4" name="q12" value="q12r4">
+            <label class="label_form" for="q12r4">75 à 100%</label>
+          </div>       
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est, environ, la distance moyenne des trajets en transports en commun ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q13r1" name="q13" value="q13r1">
+            <label class="label_form" for="q13r1">0 à 2 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q13r2" name="q13" value="q13r2">
+            <label class="label_form" for="q13r2">3 à 5 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q13r3" name="q13" value="q13r3">
+            <label class="label_form" for="q13r3">6 à 10 km</label>
+          </div>
+          <div>
+            <input type="radio" id="q13r4" name="q13" value="q13r4">
+            <label class="label_form" for="q13r4">Plus de 10 km</label>
+          </div>          
+        </div>
+        </div>
+
+        <div class="sous_bloc_formulaire">
+          <p>Quelle est la durée moyenne d'un trajet en transports en commun ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q14r1" name="q14" value="q14r1">
+            <label class="label_form" for="q14r1">0 à 4 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q14r2" name="q14" value="q14r2">
+            <label class="label_form" for="q14r2">5 à 20 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q14r3" name="q14" value="q14r3">
+            <label class="label_form" for="q14r3">21 à 44 minutes</label>
+          </div>
+          <div>
+            <input type="radio" id="q14r4" name="q14" value="q14r4">
+            <label class="label_form" for="q14r4">45 minutes à 1 heure</label>
+          </div>  
+          <div>
+            <input type="radio" id="q14r5" name="q14" value="q14r5">
+            <label class="label_form" for="q14r5">Plus d'une heure</label>
+          </div>         
+        </div>
+        </div>
+
+        <h3>3. Déplacements professionnels</h3>
+
+        <div class="sous_bloc_formulaire">
+          <p>Le personnel est-il amené à se déplacer pendant la journée de travail ?</p>
+          <div class="reponses">
+          <div>
+            <input type="radio" id="q15r2" name="q15" value="q15r2">
+            <label class="label_form" for="q15r2">Non</label>
+          </div> 
+          <div>
+            <input type="radio" id="q15r1" name="q15" value="q15r1">
+            <label class="label_form" for="q15r1">Oui</label>
+            <div class="sioui2"> <!-- Apparaît si OUI est coché -->
+              <div class="sous_cat_bloc_formulaire" id="sous_cat_q16">
+                <p>Si oui, combien de salariés se déplacent ?</p>
+                <div class="reponses">
+                <div>
+                  <input type="radio" id="q16r1" name="q16" value="q16r1">
+                  <label class="label_form" for="q16r1">0 à 24%</label>
+                </div>
+                <div>
+                  <input type="radio" id="q16r2" name="q16" value="q16r2">
+                  <label class="label_form" for="q16r2">25 à 49%</label>
+                </div>
+                <div>
+                  <input type="radio" id="q16r3" name="q16" value="q16r3">
+                  <label class="label_form" for="q16r3">50 à 74%</label>
+                </div>
+                <div>
+                  <input type="radio" id="q16r4" name="q16" value="q16r4">
+                  <label class="label_form" for="q16r4">75 à 100%</label>
+                </div>
+              </div>
+              </div>
+
+              <div class="sous_cat_bloc_formulaire" id="sous_cat_q17">
+                <p>Si oui, durant combien de temps sont-ils amenés à se déplacer ?</p>
+                <div class="reponses">
+                  <div>
+                    <input type="radio" id="q17r1" name="q17" value="q17r1">
+                    <label class="label_form" for="q17r1">0 à 4 minutes</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="q17r2" name="q17" value="q17r2">
+                    <label class="label_form" for="q17r2">5 à 20 minutes</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="q17r3" name="q17" value="q17r3">
+                    <label class="label_form" for="q17r3">21 à 44 minutes</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="q17r4" name="q17" value="q17r4">
+                    <label class="label_form" for="q17r4">45 minutes à 1 heure</label>
+                  </div>  
+                  <div>
+                    <input type="radio" id="q17r5" name="q17" value="q17r5">
+                    <label class="label_form" for="q17r5">Plus d'une heure</label>
+                  </div>         
+                </div>
+              </div>
+
+              <div class="sous_cat_bloc_formulaire" id="sous_cat_q18">
+                <p>Si oui, quelle est en moyenne la distance de leur(s) déplacement(s) ?</p>
+                <div class="reponses">
+                  <div>
+                    <input type="radio" id="q18r1" name="q18" value="q18r1">
+                    <label class="label_form" for="q18r1">0 à 9 km</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="q18r2" name="q18" value="q18r2">
+                    <label class="label_form" for="q18r2">10 à 24 km</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="q18r3" name="q18" value="q18r3">
+                    <label class="label_form" for="q18r3">25 à 50 km</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="q18r4" name="q18" value="q18r4">
+                    <label class="label_form" for="q18r4">Plus de 50 km</label>
+                  </div>               
+                </div>
+              </div>
+
+              <div class="sous_cat_bloc_formulaire" id="sous_cat_q20">
+                <p>Si oui, quelles routes sont principalement empruntées ?</p>
+                <div class="reponses">
+                  <div>
+                    <input type="checkbox" id="q20r1" name="q20" value="q20r1">
+                    <label class="label_form" for="q20r1">Voie Rapide</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="q20r2" name="q20" value="q20r2">
+                    <label class="label_form" for="q20r2">Centre Ville</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="q20r3" name="q20" value="q20r3">
+                    <label class="label_form" for="q20r3">Vieux Nice</label>
+                  </div>
+                  <div>
+                    <label class="label_form" for="q20r4">Autre route </label>
+                    <input type="text" id="q20r4" name="q20" value="" placeholder="Ecrivez ici">  
+                  </div>               
+                </div>
+                </div>
+
+              <div class="sous_cat_bloc_formulaire" id="sous_cat_q19">
+                <p>Si oui, quelle(s) est/sont la/les raison(s) du/des déplacement(s) ?</p>
+                <div class="reponses">
+                  <div>
+                    <input type="checkbox" id="q19r1" name="q19" value="q19r1">
+                    <label class="label_form" for="q19r1">Logistique</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="q19r2" name="q19" value="q19r2">
+                    <label class="label_form" for="q19r2">Prospection</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="q19r3" name="q19" value="q19r3">
+                    <label class="label_form" for="q19r3">Restauration</label>
+                  </div>
+                  <div>
+                    <label class="label_form" for="q19r4">Autre raison </label>
+                    <input type="text" id="q19r4" name="q19" value="" placeholder="Ecrivez ici">  
+                  </div>               
+                </div>
+                </div>
+                <div class="sous_cat_bloc_formulaire" id="sous_cat_q22">
+                  <p>Si oui, choisissez une tranche horaire moyenne de déplacements ?</p>
+                  <div class="reponses">
+                    <div>
+                      <input type="radio" id="q22r1" name="q22" value="q22r1">
+                      <label class="label_form" for="q22r1">0h/6h</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="q22r2" name="q22" value="q22r2">
+                      <label class="label_form" for="q22r2">6h/12h</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="q22r3" name="q22" value="q22r3">
+                      <label class="label_form" for="q22r3">12h/16h</label>
+                    </div>    
+                    <div>
+                      <input type="radio" id="q22r4" name="q22" value="q22r4">
+                      <label class="label_form" for="q22r4">16h/20h</label>
+                    </div>    
+                    <div>
+                      <input type="radio" id="q22r5" name="q22" value="q22r5">
+                      <label class="label_form" for="q22r5">20h/0h</label>
+                    </div>       
+                    </div>
+                  </div>
+                  </div>
+          </div>
+        </div>
+        </div>
+
+        <h3>4. Avis général</h3>
+
+        <div class="sous_bloc_formulaire">
+          <p>Comment trouvez-vous, actuellement, la circulation à Nice ?</p>
+          <div class="reponses">
+            <label class="label_form" for="range1">Très compliquée </label>
+            <input type="range" min="0" max="100" step="20" id="range1" value="10" name="range1">
+            <label class="label_form" for="range1">Très fluide</label>
+          </div>
+        </div> 
+        <input type="button" value="Envoyer le questionnaire" id="envoyer_form">
+
+      </div>
+  </form>
+  <!--FIN FORMULAIRE-->
+  </main>
+</div>
+
+</body>
+
+<footer>
+  <div class="bandeau_bas">
+    <div class="texte_bandeau_bas">Un projet de Louis Rainero, Valentin Luthringer, Matthieu Griffonnet, Tom Da Costa,
+      Anicé Khéniche et Luca Panossian-Zorab</div>
+    <img src="../img/uca_blanc.png" class="logo_bas_de_page">
+</footer>
+
+</html>

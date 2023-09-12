@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SAE S1.05 et SAE 1.06</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Bandeau en haut -->
+  <div class="bandeau_haut">
+    <div class="texte_bandeau_haut">Site créé dans le cadre du projet de SAE Etude de faisabilité à L'IUT de Nice Côte
+      d'Azur
+    </div>
+  </div>
+  <!-- FIN Bandeau en haut -->
+  <!-- Menu horizontal -->
+  <div class="bandeau_menu">
+    <nav class="menu">
+      <ul class="l-menu">
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+          <div class="main_pages">
+      <a href="../index.html"><img src="../img/logo-iut-blanc-V2.png" class="logo_iut_menu"></a>
+      <a href="../index.html" class="pages">Accueil</a>
+      <a href="./presentation.html" class="pages" style="background-color: rgb(00,40,70,0.5); border-bottom: 2px solid white;">Présentation du projet</a>
+      <a href="./questionnaire.html" class="pages">Sondage</a>
+      <a href="./contact.html" class="pages">Contact</a>
+    </ul>
+  </nav>
+  </div>
+  <!-- FIN Menu horizontal -->
+  <!-- Ecran Accueil -->
+  <header id="header_2">
+  <div class="home_screen" id="home_screen_2">
+    <p>Présentation du projet</p>
+  </div>
+  </header>
+  <!-- FIN Ecran Accueil -->
+  <!-- Page corps-->
+<div class="mainbkg">
+  <main>
+    <h2>> Présentation</h2>
+        <p>Selon une étude menée par la Métropole Nice Côte d’Azur, en 2021, les Niçois ont perdu en moyenne 14
+        heures dans les embouteillages dont 12 pour se rendre sur leur lieu de travail.</p>
+        <p>En parallèle, les déplacements motorisés au sein de la ville de Nice ont contribué à une émission de
+        1 768 000 téq (tonnes équivalent) de CO2 en 2021.</p>
+        <p>Il est donc nécessaire de faire bouger les choses et de permettre une meilleure mobilité des déplacements au sein de la ville de Nice.</p>
+        <p>Le projet que nous souhaitons mettre en place répond exactement à cette demande : il consiste en l'amélioration de la situation de la mobilité dans la ville de Nice, qui se dégrade au fil du temps de plus en plus.</p>
+        <p>Nous prévoyons de mettre en place d'avantage de pistes cyclables (pour fluidifier le trafic) et d'avantage de zones piétonnes, et avons déjà élaboré de possibles nouvelles pistes cyclables, voies piétonnes, stations de vélo bleu... qui pourraient fournir une réelle évolution de la situation actuelle.
+        </p>
+        <p><strong>Voici la carte que nous avons réalisé :</strong>
+        </p>
+        <!-- INTEGRATION DE LA CARTE IGN DU PROJET -->
+        <iframe id="iframe_carte" src="https://macarte.ign.fr/carte/fddff1bbec724fd423b3a442309df8dc/SAE_VILLE_DE_NICE" scroll="no"></iframe>
+        <p><strong>Légende :</strong></p>
+        <!-- BLOC DE LEGENDE POUR LA CARATE -->
+        <div class="legende_carte">
+          <div id="legende_tramway"></div><p>Tramway</p>
+          <div id="legende_tramsout"></div><p>Tramway souterrain</p>
+          <div id="legende_routeuniqu"></div><p>Route très empruntée par les véhicules, à consacrer aux véhicules uniquement</p>
+          <div id="legende_cycldejadouble"></div><p>Piste cyclable voie/sens double déja existante</p>
+          <div id="legende_cycldoubleprevoir"></div><p>Nouvelle piste cyclable voie/sens double à prévoir</p>
+          <div class="suite_legende">
+            <input type="checkbox" name="Suite" value="Suite" id="suite_leg">
+            <label class="label_legende" for="suite_leg">📙 Afficher/Cacher la légende entière</label>
+            <!-- Au clic, la suite de la légence s'affiche -->
+                <br>
+                <div class="aff_suite_legende">
+                  <br>
+                    <div id="legende_cycluniqueprevoir"></div><p>Nouvelle piste cyclable voie/sens unique à prévoir</p>
+                    <div id="legende_cycldejaunique"></div><p>Piste cyclable voie/sens unique déja existante</p>
+                    <div id="legende_pietdeja"></div><p>Voie piétonne / voie avec trottoir large</p>
+                    <div id="legende_pietnouv"></div><p>Nouvelle voie piétonne / élargissement du trottoir à prévoir</p>
+                    <div id="legende_partage"></div><p>Route véhicule et vélo (partagée)</p>
+                    <div id="legende_zonerouge"></div><p>Zone où les modifications de circulation sont possibles</p>
+                    <div id="legende_feuxnouv"></div><p>Feux tricoles pour vélos à prévoir</p>
+                    <div id="legende_feuxdeja"></div><p>Feux tricolores pourvélos déjà existants</p>
+                    <div id="legende_vbdeja"></div><p>Stations vélo bleu déjà existantes</p>
+                    <div id="legende_vbnouv"></div><p>Stations de vélo bleu à prévoir</p>
+                    <div id="legende_repardeja"></div><p>Stations de réparation vélo déjà existantes</p>
+                    <div id="legende_reparnouv"></div><p>Stations de réparation vélo à prévoir</p>
+                </div>
+          </div> 
+        </div>
+        <!-- FIN BLOC DE LEGENDE POUR LA CARATE -->
+
+        <p>Ce projet concerne en premier lieu le secteur professionnel puisqu'il se voit particulièrement touché par ces problèmes de déplacements. C'est pourquoi
+            nous vous demandons dans un premier temps de <strong><a href="./questionnaire.html">répondre à un sondage</a></strong> que nous avons élaboré pour vous, qui nous permettra d'évaluer les trajets que nous pourrons substituer ou non.
+        </p>
+        <div class="espace_bas_site"></div>
+
+  </main>
+</div>
+   <!-- FIN Page corps-->
+
+</body>
+
+<footer>
+  <div class="bandeau_bas">
+    <div class="texte_bandeau_bas">Un projet de Louis Rainero, Valentin Luthringer, Matthieu Griffonnet, Tom Da Costa,
+      Anicé Khéniche et Luca Panossian-Zorab</div>
+
+    <img src="../img/uca_blanc.png" class="logo_bas_de_page">
+</footer>
+
+</html>
