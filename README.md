@@ -1,4 +1,4 @@
-<h1>{$\color{orange}Projet IUT : Étude de Faisabilité au sein de la ville de Nice}$</h1>
+<h1>${\color{orange}Projet IUT : Étude de Faisabilité au sein de la ville de Nice}$</h1>
 
 [Ouvrir le site web en cliquant ici !](https://valuthringer.github.io/IUT_Projet_EtudeFaisabiliteNice)
 
